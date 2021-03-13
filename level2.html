@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*let ary = [1,[2,[3,[4,5]]],6];
+        let newary=[];
+        function even (arr){
+            for(let i=0;i<arr.length;i++)
+            {
+                if(Array.isArray(arr[i])){
+                    even(arr[i])
+                }
+                else{
+                    newary.push(arr[i])
+                }
+            }
+        }
+        even(ary);
+        console.log(newary);*/   //这是方法一
+
+        let ary = [1,[2,[3,[4,5]]],6];
+        let newary=[];
+        newary = ary.flat(Infinity);
+        console.log(newary);  //这是方法二
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
